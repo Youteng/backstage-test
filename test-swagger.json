@@ -5,7 +5,7 @@
         "version": "1.0"
     },
     "paths": {
-        "/api/Test": {
+        "172.31.10.115:8555/api/Test": {
             "get": {
                 "tags": [
                     "Test"
