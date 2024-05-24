@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: api
+  description: The swagger doc of test api
+spec:
+  type: openapi
+  lifecycle: development
+  owner: youteng
+  definition:
+    $text: https://github.com/Youteng/backstage-test/blob/main/test-swagger.json
