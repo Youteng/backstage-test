@@ -8,4 +8,4 @@ spec:
   lifecycle: development
   owner: youteng
   definition:
-    $text: http://172.31.10.115:8555/swagger/v1/swagger.json
+    $text: https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v2.0/json/api-with-examples.json
