@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "TestApi2",
+        "version": "1.0"
+    },
+    "servers":[
+      {
+        "url": "http://172.31.10.115:8555"
+      }],
+    "paths": {
+        "/api/Test": {
+            "get": {
+                "tags": [
+                    "Test"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "components": {}
+}
