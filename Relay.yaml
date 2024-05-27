@@ -1,0 +1,383 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "RelayService.Core",
+        "version": "v1"
+    },
+    "servers": [
+        {
+            "url": "/RelayService.Core"
+        }
+    ],
+    "paths": {
+        "/nag": {
+            "post": {
+                "tags": [
+                    "Nag"
+                ],
+                "operationId": "PostAsync",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/NagInput"
+                            }
+                        },
+                        "text/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/NagInput"
+                            }
+                        },
+                        "application/*+json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/NagInput"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "text/plain": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/RelayNagResult"
+                                }
+                            },
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/RelayNagResult"
+                                }
+                            },
+                            "text/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/RelayNagResult"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/query/{path1}": {
+            "get": {
+                "tags": [
+                    "Query"
+                ],
+                "parameters": [
+                    {
+                        "name": "path1",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path2",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path3",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Query"
+                ],
+                "parameters": [
+                    {
+                        "name": "path1",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path2",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path3",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/query/{path1}/{path2}": {
+            "get": {
+                "tags": [
+                    "Query"
+                ],
+                "parameters": [
+                    {
+                        "name": "path1",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path2",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path3",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Query"
+                ],
+                "parameters": [
+                    {
+                        "name": "path1",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path2",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path3",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/query/{path1}/{path2}/{path3}": {
+            "get": {
+                "tags": [
+                    "Query"
+                ],
+                "parameters": [
+                    {
+                        "name": "path1",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path2",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path3",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Query"
+                ],
+                "parameters": [
+                    {
+                        "name": "path1",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path2",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path3",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ModelInfo": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "displayName": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            },
+            "NagInput": {
+                "type": "object",
+                "properties": {
+                    "sourceFlag": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "userID": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "content": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "modelID": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "RelayNagResult": {
+                "type": "object",
+                "properties": {
+                    "commKey": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "commName": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "content": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "shortUrlText": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "shortUrl": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "modelInfoes": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ModelInfo"
+                        },
+                        "nullable": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "imgUrl": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "thumbUrl": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "securitySchemes": {
+            "Bearer": {
+                "type": "http",
+                "description": "Enter your jwt token",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
+    "security": [
+        {
+            "Bearer": []
+        }
+    ]
+}
